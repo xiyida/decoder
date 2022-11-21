@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Demo</title>
+    </head>
+    <body>
+        <div class="play-container"></div>
+        <script type="module">
+            import {SimplePlayer} from "./js/SimplePlayer.js";
+            let el = document.querySelector("play-container");
+            let options = {
+                libpath: "",
+                m3u8URL: "",
+            };
+            let player = new SimplePlayer(el, options);
+        </script>
+    </body>
+</html>
